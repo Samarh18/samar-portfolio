@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --warm-white: #F5F0E8;
+  --near-black: #1A1A18;
+  /* Red: #C94B2A on #F5F0E8 = 4.6:1 contrast (AA) */
+  --red: #B03A1F;
+  --red-light: #F5E8E3;
+  /* Amber text must be dark enough — use deep amber on light bg */
+  --amber: #8C5200;
+  --amber-light: #FAF0DC;
+  /* Green: dark enough for text */
+  --green: #2D5A0A;
+  --green-light: #EAF0DC;
+  --gray-mid: #5C5B59;   /* was #8A8880 — boosted for 4.5:1 on warm-white */
+  --gray-light: #D8D3C8;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --mono: 'DM Mono', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--warm-white);
+  color: var(--near-black);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Skip to main content — screen reader + keyboard nav */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--near-black);
+  color: var(--warm-white);
+  padding: 0.5rem 1rem;
+  font-family: var(--mono);
+  font-size: 13px;
+  border-radius: 0 0 6px 6px;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+
+.dot-pattern {
+  background-image: radial-gradient(circle, #B03A1F28 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+.font-serif { font-family: var(--serif); }
+.font-mono  { font-family: var(--mono); }
+
+/* Section label — bumped to 13px, darker color */
+.section-label {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-mid);
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+
+/* Wider content container */
+.content-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+section { padding: 5rem 0; }
+
+a { color: inherit; text-decoration: none; }
+a:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-family: var(--mono);
+  font-weight: 500;
+  padding: 3px 11px;
+  border-radius: 100px;
+  letter-spacing: 0.03em;
+}
+/* All tag colors verified at 4.5:1+ contrast on their bg */
+.tag-red   { background: #FADDCF; color: #7A2510; }
+.tag-amber { background: var(--amber-light); color: var(--amber); }
+.tag-green { background: var(--green-light); color: var(--green); }
+.tag-gray  { background: #E8E3D8; color: #3D3C3A; }
+
+.divider { width: 100%; height: 1px; background: var(--gray-light); }
+
+/* Focus ring for interactive elements */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+::selection { background: #FADDCF; color: #7A2510; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--warm-white); }
+::-webkit-scrollbar-thumb { background: var(--gray-light); border-radius: 3px; }
+
+/* =====================
+   MOBILE RESPONSIVENESS
+   ===================== */
+
+@media (max-width: 768px) {
+  .content-wrap {
+    padding: 0 1.25rem;
+  }
+
+  section {
+    padding: 3.5rem 0;
+  }
+
+  /* About: stack photo below text */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-photo {
+    position: relative !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: 280px;
+    margin: 2rem auto 0;
+  }
+
+  /* Hide arrow labels on mobile — too cramped */
+  .label-samar,
+  .label-mario {
+    display: none !important;
+  }
+
+  /* Projects: single column */
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Course table: wrap role to next line */
+  .course-row {
+    grid-template-columns: 48px 1fr !important;
+    row-gap: 2px;
+  }
+  .course-role {
+    grid-column: 2;
+    font-size: 11px !important;
+  }
+
+  /* Navbar: hide links, show only name + CV */
+  .nav-links { display: none !important; }
+  .nav-mobile-cv { display: flex !important; }
+
+  /* Contact email button: full width */
+  .email-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Research tags: wrap nicely */
+  .research-tags {
+    gap: 6px !important;
+  }
+
+  /* Footer links */
+  .contact-footer-links {
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrap {
+    padding: 0 1rem;
+  }
+}
