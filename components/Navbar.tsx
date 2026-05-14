@@ -50,7 +50,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="https://drive.google.com/file/d/1VrNTxfKC7LRwmHa-xgu8xpQ2PDuDbT-4/view?usp=sharing"
+          <a href="https://drive.google.com/file/d/1n-H0arMXcKTxVYCLCS-ldwZ327HcEcRO/view?usp=sharing"
             target="_blank" rel="noopener noreferrer"
             aria-label="Download CV (opens in new tab)"
             style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#B03A1F', border: '1.5px solid #B03A1F', padding: '5px 14px', borderRadius: '100px', transition: 'all 0.2s' }}
@@ -86,7 +86,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="https://drive.google.com/file/d/1VrNTxfKC7LRwmHa-xgu8xpQ2PDuDbT-4/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/1n-H0arMXcKTxVYCLCS-ldwZ327HcEcRO/view?usp=sharing"
               target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}
               style={{ fontFamily: 'var(--mono)', fontSize: '14px', color: '#B03A1F', alignSelf: 'flex-start', border: '1.5px solid #B03A1F', padding: '6px 18px', borderRadius: '100px' }}>
               CV
