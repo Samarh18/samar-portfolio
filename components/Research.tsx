@@ -59,22 +59,22 @@ export default function Research() {
         <FadeUp delay={0.05}><h3 style={{ fontFamily: 'var(--mono)', fontSize: '14px', fontWeight: 500, color: '#5C5B59', letterSpacing: '0.08em', marginBottom: '1.25rem' }}>M.ENG THESIS</h3></FadeUp>
         <FadeUp delay={0.1}>
           <article aria-label="M.Eng. Thesis" style={{ border: '2px solid #B03A1F', borderRadius: '8px', padding: '1.75rem', marginBottom: '3rem', background: '#F5F0E8' }}>
-            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '1rem' }}>
-              <span className="tag tag-red">Accessibility</span>
-              <span className="tag tag-green">AI Education</span>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <span className="tag tag-red">Accessibility</span>
+                <span className="tag tag-green">AI Education</span>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>2024 – 2025</span>
+                <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>·</span>
+                <a href="https://raica.mit.edu/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59', borderBottom: '1px solid #D8D3C8' }}
+                  onMouseEnter={e => { e.currentTarget.style.color='#B03A1F'; e.currentTarget.style.borderColor='#B03A1F' }}
+                  onMouseLeave={e => { e.currentTarget.style.color='#5C5B59'; e.currentTarget.style.borderColor='#D8D3C8' }}>
+                  MIT RAICA Lab
+                </a>
+              </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
-              <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.4rem', letterSpacing: '-0.01em', lineHeight: 1.3 }}>Blocks Without Barriers: Making Blockly Accessible for Blind and Visually Impaired Students</h3>
-            </div>
-            <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
-              <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>2024 – 2025</span>
-              <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>·</span>
-              <a href="https://raica.mit.edu/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59', borderBottom: '1px solid #D8D3C8' }}
-                onMouseEnter={e => { e.currentTarget.style.color='#B03A1F'; e.currentTarget.style.borderColor='#B03A1F' }}
-                onMouseLeave={e => { e.currentTarget.style.color='#5C5B59'; e.currentTarget.style.borderColor='#D8D3C8' }}>
-                MIT RAICA Lab
-              </a>
-            </div>
+            <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.4rem', letterSpacing: '-0.01em', lineHeight: 1.3, marginBottom: '1rem' }}>Blocks Without Barriers: Making Blockly Accessible for Blind and Visually Impaired Students</h3>
             <p style={{ fontFamily: 'var(--mono)', fontSize: '11px', color: '#5C5B59', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>ABSTRACT</p>
             <p style={{ color: '#3A3A38', lineHeight: 1.75, fontSize: '14px', marginBottom: '1.25rem' }}>
               Block-based programming environments are commonly used to introduce programming and AI concepts, but are often inaccessible to blind and visually impaired learners. This thesis explores how a Blockly-based environment can be adapted to help these students program independently. Two portable, co-designed plugins were developed: a custom screen reader providing real-time audio feedback using the Web Speech API, and an enhanced keyboard navigation plugin extended with student-tested features. Development followed an iterative, user-centered co-design process, with feedback from blind and visually impaired students directly shaping implementation priorities. By the final session, all participants were able to complete essential tasks to build functional programs independently.
