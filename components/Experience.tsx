@@ -33,7 +33,7 @@ export default function Experience() {
     <section id="experience" style={{ padding: '5rem 0', background: '#EFE9DF' }}>
       <div className="content-wrap">
 
-        <p className="section-label" aria-label="Section: Teaching Experience">04 — TEACHING EXPERIENCE</p>
+        <p className="section-label" aria-label="Section: Teaching Experience">05 — TEACHING EXPERIENCE</p>
 
         <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', lineHeight: 1.2, marginBottom: '3rem', letterSpacing: '-0.01em' }}>
           Teaching Experience

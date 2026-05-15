@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <section id="projects" style={{ padding: '5rem 0' }}>
       <div className="content-wrap">
-        <FadeUp><p className="section-label" aria-label="Section: Projects">03 — PROJECTS</p></FadeUp>
+        <FadeUp><p className="section-label" aria-label="Section: Projects">04 — PROJECTS</p></FadeUp>
         <FadeUp delay={0.05}>
           <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', lineHeight: 1.2, marginBottom: '3rem', letterSpacing: '-0.01em' }}>Projects</h2>
         </FadeUp>

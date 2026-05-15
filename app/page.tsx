@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import Education from '@/components/Education'
 import Research from '@/components/Research'
 import Projects from '@/components/Projects'
 import Experience from '@/components/Experience'
@@ -13,6 +14,7 @@ export default function Home() {
       <main id="main-content" tabIndex={-1}>
         <Hero />
         <About />
+        <Education />
         <Research />
         <Projects />
         <Experience />

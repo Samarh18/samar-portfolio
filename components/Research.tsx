@@ -44,7 +44,7 @@ export default function Research() {
     <section id="research" style={{ padding: '5rem 0', background: '#EFE9DF' }}>
       <div className="content-wrap">
 
-        <FadeUp><p className="section-label" aria-label="Section: Research">02 — RESEARCH</p></FadeUp>
+        <FadeUp><p className="section-label" aria-label="Section: Research">03 — RESEARCH</p></FadeUp>
 
         <FadeUp delay={0.05}>
           <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', lineHeight: 1.2, marginBottom: '1rem', letterSpacing: '-0.01em' }}>Research</h2>
