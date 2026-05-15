@@ -7,10 +7,13 @@ const publications = [
   { title: 'Act Out An LLM', venue: 'AAAI 2025', authors: 'Wharton, S., Masla, J., Guterman, L., Gustafson-Quiett, M. C., Bosch, C., Abu Hegly, S., et al.', description: 'An activity in which students act as a large language model to generate a sentence based on a prompt. Students are introduced to the concept of a token in text generation through a next-token-voting activity repeated until a full sentence is generated.', tag: 'tag-green', tagLabel: 'AI Education', link: 'https://modelai.gettysburg.edu/', linkLabel: 'View activity' },
 ]
 
-const talks = [
+const presentations = [
   { title: 'Lessons Learned in The Path to Accessibility: Enhancing the RAISE Playground for All', venue: 'CATE 2025', description: 'Presented findings and lessons learned from the process of making the RAISE Playground accessible to blind and low-vision students.', tag: 'tag-red', tagLabel: 'Accessibility', link: 'https://drive.google.com/file/d/1fCr4QcKqJueqeKb1SqcCBSq8GuflgQFk/view?usp=sharing', linkLabel: 'View slides' },
-  { title: 'Introduction to the RAISE Playground', venue: 'MIT AI & Education Summit 2025', description: '', tag: 'tag-green', tagLabel: 'AI Education', link: 'https://docs.google.com/presentation/d/1CewqQQQN0uUPIkYbr1sVuvUsyh1XSAlJvgDBrigJxks/edit?usp=sharing', linkLabel: 'View slides' },
-  { title: 'RAISE Playground demo', venue: 'MIT AI & Education Summit 2024', description: '', tag: 'tag-green', tagLabel: 'AI Education', link: '', linkLabel: '' },
+]
+
+const workshops = [
+  { title: 'Introduction to the RAISE Playground', venue: 'MIT AI & Education Summit 2025', description: 'Led a hands-on workshop introducing the RAISE Playground, covering block-based programming, the Playground interface, example projects, and interactive coding challenges.', tag: 'tag-green', tagLabel: 'AI Education', link: 'https://docs.google.com/presentation/d/1CewqQQQN0uUPIkYbr1sVuvUsyh1XSAlJvgDBrigJxks/edit?usp=sharing', linkLabel: 'View slides' },
+  { title: 'RAISE Playground demo', venue: 'MIT AI & Education Summit 2024', description: 'Demonstrated the core features of the RAISE Playground, showing how students can build interactive projects with sprites, blocks, sounds, motion, and AI-related extensions.', tag: 'tag-green', tagLabel: 'AI Education', link: '', linkLabel: '' },
 ]
 
 const positions = [
@@ -117,19 +120,37 @@ export default function Research() {
           ))}
         </StaggerGroup>
 
-        {/* Talks */}
-        <FadeUp><h3 style={{ fontFamily: 'var(--mono)', fontSize: '14px', fontWeight: 500, color: '#5C5B59', letterSpacing: '0.08em', marginBottom: '1.5rem' }}>PRESENTATIONS &amp; WORKSHOPS</h3></FadeUp>
+        {/* Presentations */}
+        <FadeUp><h3 style={{ fontFamily: 'var(--mono)', fontSize: '14px', fontWeight: 500, color: '#5C5B59', letterSpacing: '0.08em', marginBottom: '1.5rem' }}>PRESENTATIONS</h3></FadeUp>
         <StaggerGroup style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '3.5rem' }}>
-          {talks.map((talk, i) => (
+          {presentations.map((item, i) => (
             <StaggerItem key={i}>
               <article style={{ background: '#F5F0E8', border: '1px solid #D8D3C8', borderRadius: '8px', padding: '1.5rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.6rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-                  <span className={`tag ${talk.tag}`}>{talk.tagLabel}</span>
-                  <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>{talk.venue}</span>
+                  <span className={`tag ${item.tag}`}>{item.tagLabel}</span>
+                  <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>{item.venue}</span>
                 </div>
-                <h4 style={{ fontFamily: 'var(--serif)', fontSize: '1.1rem', marginBottom: talk.description || talk.link ? '0.75rem' : 0, lineHeight: 1.4 }}>{talk.title}</h4>
-                {talk.description && <p style={{ fontSize: '14px', color: '#3A3A38', lineHeight: 1.7, marginBottom: talk.link ? '1rem' : 0 }}>{talk.description}</p>}
-                {talk.link && <a href={talk.link} target="_blank" rel="noopener noreferrer" style={linkStyle} onMouseEnter={e => e.currentTarget.style.opacity='0.7'} onMouseLeave={e => e.currentTarget.style.opacity='1'}>{talk.linkLabel} →</a>}
+                <h4 style={{ fontFamily: 'var(--serif)', fontSize: '1.1rem', marginBottom: item.description || item.link ? '0.75rem' : 0, lineHeight: 1.4 }}>{item.title}</h4>
+                {item.description && <p style={{ fontSize: '14px', color: '#3A3A38', lineHeight: 1.7, marginBottom: item.link ? '1rem' : 0 }}>{item.description}</p>}
+                {item.link && <a href={item.link} target="_blank" rel="noopener noreferrer" style={linkStyle} onMouseEnter={e => e.currentTarget.style.opacity='0.7'} onMouseLeave={e => e.currentTarget.style.opacity='1'}>{item.linkLabel} →</a>}
+              </article>
+            </StaggerItem>
+          ))}
+        </StaggerGroup>
+
+        {/* Workshops */}
+        <FadeUp><h3 style={{ fontFamily: 'var(--mono)', fontSize: '14px', fontWeight: 500, color: '#5C5B59', letterSpacing: '0.08em', marginBottom: '1.5rem' }}>WORKSHOPS</h3></FadeUp>
+        <StaggerGroup style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '3.5rem' }}>
+          {workshops.map((item, i) => (
+            <StaggerItem key={i}>
+              <article style={{ background: '#F5F0E8', border: '1px solid #D8D3C8', borderRadius: '8px', padding: '1.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.6rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                  <span className={`tag ${item.tag}`}>{item.tagLabel}</span>
+                  <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>{item.venue}</span>
+                </div>
+                <h4 style={{ fontFamily: 'var(--serif)', fontSize: '1.1rem', marginBottom: item.description || item.link ? '0.75rem' : 0, lineHeight: 1.4 }}>{item.title}</h4>
+                {item.description && <p style={{ fontSize: '14px', color: '#3A3A38', lineHeight: 1.7, marginBottom: item.link ? '1rem' : 0 }}>{item.description}</p>}
+                {item.link && <a href={item.link} target="_blank" rel="noopener noreferrer" style={linkStyle} onMouseEnter={e => e.currentTarget.style.opacity='0.7'} onMouseLeave={e => e.currentTarget.style.opacity='1'}>{item.linkLabel} →</a>}
               </article>
             </StaggerItem>
           ))}
