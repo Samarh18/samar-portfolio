@@ -53,10 +53,13 @@ export default function Experience() {
                 <span className="tag tag-amber">Inspirit AI</span>
                 <span className="tag tag-green">Industry</span>
               </div>
-              <h3 style={{ fontWeight: 500, fontSize: '15px' }}>Instructor → Weekend Lead, Program &amp; Curriculum Manager</h3>
+              <h3 style={{ fontWeight: 500, fontSize: '15px' }}>Weekend Lead · Program &amp; Curriculum Manager · Instructor</h3>
             </div>
             <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59', whiteSpace: 'nowrap' }}>Mar 2021 – Present</span>
           </div>
+          <p style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59', marginBottom: '1rem' }}>
+            320+ students · 32+ cohorts · 4+ years
+          </p>
           <ul style={{ paddingLeft: '1.1rem' }}>
             {inspiritBullets.map((b, i) => (
               <li key={i} style={{ fontSize: '14px', color: '#3A3A38', lineHeight: 1.75, marginBottom: '0.3rem' }}>{b}</li>

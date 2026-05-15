@@ -33,8 +33,8 @@ export default function Contact() {
         <FadeUp><p className="section-label" aria-label="Section: Contact">06 — CONTACT</p></FadeUp>
         <FadeUp delay={0.05}>
           <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(2rem, 5vw, 3.5rem)', lineHeight: 1.1, marginBottom: '1rem', letterSpacing: '-0.02em' }}>Let's talk.</h2>
-          <p style={{ color: '#4A4A48', maxWidth: '440px', lineHeight: 1.75, marginBottom: '3rem' }}>
-            I'm always open to research collaborations, conversations about my work, or just connecting with people doing interesting things. I'd love to hear from you.
+          <p style={{ color: '#4A4A48', maxWidth: '480px', lineHeight: 1.75, marginBottom: '3rem' }}>
+            I'm currently open to research collaborations, particularly around AI education, accessibility, and human-centered technology. I'm also happy to talk through my work, swap ideas with people asking similar questions, or just connect if our paths seem like they should cross.
           </p>
         </FadeUp>
         <FadeUp delay={0.12}>

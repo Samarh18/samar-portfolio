@@ -22,7 +22,7 @@ export default function Education() {
       <div className="content-wrap">
 
         <FadeUp>
-          <p className="section-label" aria-label="Section: Education">02 — EDUCATION</p>
+          <p className="section-label" aria-label="Section: Education">03 — EDUCATION</p>
         </FadeUp>
 
         <FadeUp delay={0.05}>
