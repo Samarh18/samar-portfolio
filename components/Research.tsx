@@ -75,12 +75,14 @@ export default function Research() {
                 MIT RAICA Lab
               </a>
             </div>
+            <p style={{ fontFamily: 'var(--mono)', fontSize: '11px', color: '#5C5B59', letterSpacing: '0.06em', marginBottom: '0.5rem' }}>ABSTRACT</p>
             <p style={{ color: '#3A3A38', lineHeight: 1.75, fontSize: '14px', marginBottom: '1.25rem' }}>
               Block-based programming environments are commonly used to introduce programming and AI concepts, but are often inaccessible to blind and visually impaired learners. This thesis explores how a Blockly-based environment can be adapted to help these students program independently. Two portable, co-designed plugins were developed: a custom screen reader providing real-time audio feedback using the Web Speech API, and an enhanced keyboard navigation plugin extended with student-tested features. Development followed an iterative, user-centered co-design process, with feedback from blind and visually impaired students directly shaping implementation priorities. By the final session, all participants were able to complete essential tasks to build functional programs independently.
             </p>
             <div style={{ display: "flex", gap: "1.25rem", alignItems: "center", flexWrap: "wrap" }}>
               <span style={{ fontFamily: "var(--mono)", fontSize: "12px", color: "#5C5B59" }}>Advisor: <a href="https://education.mit.edu/person/eric_klopfer/" target="_blank" rel="noopener noreferrer" style={{ color: "#5C5B59", borderBottom: "1px solid #D8D3C8" }} onMouseEnter={e => { e.currentTarget.style.color="#B03A1F"; e.currentTarget.style.borderColor="#B03A1F" }} onMouseLeave={e => { e.currentTarget.style.color="#5C5B59"; e.currentTarget.style.borderColor="#D8D3C8" }}>Eric Klopfer</a></span>
               <a href="https://drive.google.com/file/d/1iBOg6rg0I5fVOvxMZPn4lg8KquCNQ0dR/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={linkStyle} onMouseEnter={e => e.currentTarget.style.opacity='0.7'} onMouseLeave={e => e.currentTarget.style.opacity='1'}>Read thesis →</a>
+              <a href="https://samarh18.github.io/blockly-Keyboard-ScreenReader-plugins/" target="_blank" rel="noopener noreferrer" style={linkStyle} onMouseEnter={e => e.currentTarget.style.opacity='0.7'} onMouseLeave={e => e.currentTarget.style.opacity='1'}>Demo →</a>
               <a href="https://github.com/Samarh18/blockly-Keyboard-ScreenReader-plugins" target="_blank" rel="noopener noreferrer" style={{ ...linkStyle, color: '#5C5B59', borderColor: '#D8D3C8' }} onMouseEnter={e => { e.currentTarget.style.color='#B03A1F'; e.currentTarget.style.borderColor='#B03A1F' }} onMouseLeave={e => { e.currentTarget.style.color='#5C5B59'; e.currentTarget.style.borderColor='#D8D3C8' }}>GitHub →</a>
             </div>
           </article>
