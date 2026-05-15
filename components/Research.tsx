@@ -9,6 +9,8 @@ const publications = [
 
 const talks = [
   { title: 'Lessons Learned in The Path to Accessibility: Enhancing the RAISE Playground for All', venue: 'CATE 2025', description: 'Presented findings and lessons learned from the process of making the RAISE Playground accessible to blind and low-vision students.', tag: 'tag-red', tagLabel: 'Accessibility', link: 'https://drive.google.com/file/d/1fCr4QcKqJueqeKb1SqcCBSq8GuflgQFk/view?usp=sharing', linkLabel: 'View slides' },
+  { title: 'Introduction to the RAISE Playground', venue: 'MIT AI & Education Summit 2025', description: '', tag: 'tag-green', tagLabel: 'AI Education', link: 'https://docs.google.com/presentation/d/1CewqQQQN0uUPIkYbr1sVuvUsyh1XSAlJvgDBrigJxks/edit?usp=sharing', linkLabel: 'View slides' },
+  { title: 'RAISE Playground demo', venue: 'MIT AI & Education Summit 2024', description: '', tag: 'tag-green', tagLabel: 'AI Education', link: '', linkLabel: '' },
 ]
 
 const positions = [
@@ -97,7 +99,7 @@ export default function Research() {
         </FadeUp>
 
         {/* Publications */}
-        <FadeUp><h3 style={{ fontFamily: 'var(--mono)', fontSize: '14px', fontWeight: 500, color: '#5C5B59', letterSpacing: '0.08em', marginBottom: '1.5rem' }}>PUBLICATIONS &amp; ACTIVITIES</h3></FadeUp>
+        <FadeUp><h3 style={{ fontFamily: 'var(--mono)', fontSize: '14px', fontWeight: 500, color: '#5C5B59', letterSpacing: '0.08em', marginBottom: '1.5rem' }}>CONFERENCE PUBLICATIONS</h3></FadeUp>
         <StaggerGroup style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '3.5rem' }}>
           {publications.map((pub, i) => (
             <StaggerItem key={i}>
@@ -116,7 +118,7 @@ export default function Research() {
         </StaggerGroup>
 
         {/* Talks */}
-        <FadeUp><h3 style={{ fontFamily: 'var(--mono)', fontSize: '14px', fontWeight: 500, color: '#5C5B59', letterSpacing: '0.08em', marginBottom: '1.5rem' }}>TALKS &amp; PRESENTATIONS</h3></FadeUp>
+        <FadeUp><h3 style={{ fontFamily: 'var(--mono)', fontSize: '14px', fontWeight: 500, color: '#5C5B59', letterSpacing: '0.08em', marginBottom: '1.5rem' }}>PRESENTATIONS &amp; WORKSHOPS</h3></FadeUp>
         <StaggerGroup style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '3.5rem' }}>
           {talks.map((talk, i) => (
             <StaggerItem key={i}>
@@ -125,9 +127,9 @@ export default function Research() {
                   <span className={`tag ${talk.tag}`}>{talk.tagLabel}</span>
                   <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>{talk.venue}</span>
                 </div>
-                <h4 style={{ fontFamily: 'var(--serif)', fontSize: '1.1rem', marginBottom: '0.75rem', lineHeight: 1.4 }}>{talk.title}</h4>
-                <p style={{ fontSize: '14px', color: '#3A3A38', lineHeight: 1.7, marginBottom: '1rem' }}>{talk.description}</p>
-                <a href={talk.link} target="_blank" rel="noopener noreferrer" style={linkStyle} onMouseEnter={e => e.currentTarget.style.opacity='0.7'} onMouseLeave={e => e.currentTarget.style.opacity='1'}>{talk.linkLabel} →</a>
+                <h4 style={{ fontFamily: 'var(--serif)', fontSize: '1.1rem', marginBottom: talk.description || talk.link ? '0.75rem' : 0, lineHeight: 1.4 }}>{talk.title}</h4>
+                {talk.description && <p style={{ fontSize: '14px', color: '#3A3A38', lineHeight: 1.7, marginBottom: talk.link ? '1rem' : 0 }}>{talk.description}</p>}
+                {talk.link && <a href={talk.link} target="_blank" rel="noopener noreferrer" style={linkStyle} onMouseEnter={e => e.currentTarget.style.opacity='0.7'} onMouseLeave={e => e.currentTarget.style.opacity='1'}>{talk.linkLabel} →</a>}
               </article>
             </StaggerItem>
           ))}
