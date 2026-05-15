@@ -59,7 +59,7 @@ export default function Research() {
         <FadeUp delay={0.05}><h3 style={{ fontFamily: 'var(--mono)', fontSize: '14px', fontWeight: 500, color: '#5C5B59', letterSpacing: '0.08em', marginBottom: '1.25rem' }}>M.ENG THESIS</h3></FadeUp>
         <FadeUp delay={0.1}>
           <article aria-label="M.Eng. Thesis" style={{ border: '2px solid #B03A1F', borderRadius: '8px', padding: '1.75rem', marginBottom: '3rem', background: '#F5F0E8' }}>
-            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '0.75rem' }}>
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '1rem' }}>
               <span className="tag tag-red">Accessibility</span>
               <span className="tag tag-green">AI Education</span>
             </div>
@@ -92,7 +92,7 @@ export default function Research() {
           {publications.map((pub, i) => (
             <StaggerItem key={i}>
               <article style={{ background: '#F5F0E8', border: '1px solid #D8D3C8', borderRadius: '8px', padding: '1.5rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.6rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem', flexWrap: 'wrap', gap: '8px' }}>
                   <span className={`tag ${pub.tag}`}>{pub.tagLabel}</span>
                   <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>{pub.venue}</span>
                 </div>
@@ -111,7 +111,7 @@ export default function Research() {
           {presentations.map((item, i) => (
             <StaggerItem key={i}>
               <article style={{ background: '#F5F0E8', border: '1px solid #D8D3C8', borderRadius: '8px', padding: '1.5rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.6rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem', flexWrap: 'wrap', gap: '8px' }}>
                   <span className={`tag ${item.tag}`}>{item.tagLabel}</span>
                   <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>{item.venue}</span>
                 </div>
@@ -129,7 +129,7 @@ export default function Research() {
           {workshops.map((item, i) => (
             <StaggerItem key={i}>
               <article style={{ background: '#F5F0E8', border: '1px solid #D8D3C8', borderRadius: '8px', padding: '1.5rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.6rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem', flexWrap: 'wrap', gap: '8px' }}>
                   <span className={`tag ${item.tag}`}>{item.tagLabel}</span>
                   <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59' }}>{item.venue}</span>
                 </div>
@@ -149,7 +149,9 @@ export default function Research() {
               <div style={{ borderTop: '1px solid #D8D3C8', padding: '1.5rem 0' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
                   <div>
-                    <span className={`tag ${pos.tag}`} style={{ marginBottom: '0.5rem', display: 'inline-block' }}>{pos.lab}</span>
+                    <div style={{ marginBottom: '0.6rem' }}>
+                      <span className={`tag ${pos.tag}`}>{pos.lab}</span>
+                    </div>
                     <h4 style={{ fontWeight: 500, fontSize: '15px' }}>{pos.role}</h4>
                   </div>
                   <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: '#5C5B59', whiteSpace: 'nowrap' }}>{pos.period}</span>

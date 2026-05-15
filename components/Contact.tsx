@@ -61,7 +61,7 @@ export default function Contact() {
             {[
               { label: 'GitHub',      href: 'https://github.com/Samarh18' },
               { label: 'LinkedIn',    href: 'https://www.linkedin.com/in/samar-abu-hegly-99558716b/' },
-              { label: 'CV / Resume', href: 'https://drive.google.com/file/d/1n-H0arMXcKTxVYCLCS-ldwZ327HcEcRO/view?usp=sharing' },
+              { label: 'CV / Resume', href: '/cv.pdf' },
             ].map(link => (
               <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
                 style={{ fontFamily: 'var(--mono)', fontSize: '14px', color: '#5C5B59', transition: 'color 0.2s' }}

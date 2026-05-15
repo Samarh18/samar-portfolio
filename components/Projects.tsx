@@ -24,7 +24,7 @@ export default function Projects() {
               <article aria-label={proj.title} style={{ background: '#F5F0E8', border: '1px solid #D8D3C8', borderRadius: '8px', padding: '1.5rem', display: 'flex', flexDirection: 'column', height: '100%', transition: 'border-color 0.2s, transform 0.2s, box-shadow 0.2s' }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor='#1A1A18'; e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 4px 16px rgba(26,26,24,0.08)' }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor='#D8D3C8'; e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='none' }}>
-                <div style={{ marginBottom: '0.75rem' }}><span className={`tag ${proj.tag}`}>{proj.tagLabel}</span></div>
+                <div style={{ marginBottom: '1rem' }}><span className={`tag ${proj.tag}`}>{proj.tagLabel}</span></div>
                 <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.1rem', marginBottom: '0.75rem', lineHeight: 1.35, letterSpacing: '-0.01em' }}>{proj.title}</h3>
                 <p style={{ fontSize: '14px', color: '#3A3A38', lineHeight: 1.7, marginBottom: '1.25rem' }}>{proj.description}</p>
                 {proj.links.length > 0 && (
