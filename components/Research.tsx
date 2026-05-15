@@ -37,12 +37,6 @@ const positions = [
 
 const linkStyle: React.CSSProperties = { fontFamily: 'var(--mono)', fontSize: '13px', color: '#B03A1F', borderBottom: '1px solid #B03A1F', paddingBottom: '1px', transition: 'opacity 0.2s' }
 
-const researchTags = [
-  { label: 'HCI', cls: 'tag-gray' },
-  { label: 'AI / ML', cls: 'tag-amber' },
-  { label: 'Education', cls: 'tag-green' },
-  { label: 'Accessibility', cls: 'tag-red' },
-]
 
 export default function Research() {
   return (
@@ -53,15 +47,6 @@ export default function Research() {
 
         <FadeUp delay={0.05}>
           <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', lineHeight: 1.2, marginBottom: '1rem', letterSpacing: '-0.01em' }}>Research</h2>
-        </FadeUp>
-
-        {/* Research area tags */}
-        <FadeUp delay={0.08}>
-          <div role="list" aria-label="Research areas" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '2rem' }}>
-            {researchTags.map(t => (
-              <span key={t.label} role="listitem" className={`tag ${t.cls}`}>{t.label}</span>
-            ))}
-          </div>
         </FadeUp>
 
         <FadeUp delay={0.1}>

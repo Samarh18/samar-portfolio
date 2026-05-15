@@ -40,12 +40,12 @@ export default function About() {
               </StaggerItem>
               <StaggerItem>
                 <p style={{ color: '#3A3A38', lineHeight: 1.8, marginBottom: '1rem' }}>
-                  I've always believed technology can change the world for the better, but the harder question, the one I've spent years trying to answer, is how I can be part of making that change. Exploring across fields, I kept arriving at the same place: the most positively impactful technologies are the ones designed as tools in service of people, not as ends in themselves. That's what drew me to human-centered technologies.
+                  My interest in human-centered technologies grew from working across AI, education, and accessibility, where I kept arriving at the same conclusion: the most positively impactful technologies are the ones designed as tools in service of people, not as ends in themselves.
                 </p>
               </StaggerItem>
               <StaggerItem>
                 <p style={{ color: '#3A3A38', lineHeight: 1.8, marginBottom: '1rem' }}>
-                  I'm a <strong style={{ color: '#B03A1F', fontWeight: 600 }}>researcher</strong> at heart, curious and willing to follow a problem wherever it leads. I'm also a <strong style={{ color: '#8C5200', fontWeight: 600 }}>builder</strong>. I think in systems and prototypes and want to see ideas become real products. And I'm an <strong style={{ color: '#2D5A0A', fontWeight: 600 }}>educator</strong>, because teaching has been one of the most grounding parts of my journey; building with and for people means meeting them where they are. I work best across disciplines, and I believe the people a system is meant to serve should have a voice in shaping it, whenever that's possible.
+                  I think of myself as a researcher, builder, and educator. I like following a problem wherever it leads, turning ideas into prototypes, and meeting people where they are. I work best across disciplines, and I believe the people a system is meant to serve should have a voice in shaping it.
                 </p>
               </StaggerItem>
               <StaggerItem>
