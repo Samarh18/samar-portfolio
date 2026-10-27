@@ -18,7 +18,7 @@ const workshops = [
 
 const positions = [
   {
-    lab: 'Learning Analytics, Learning Design Lab – Technion', role: 'Research Assistant', period: 'Jun 2026 – Present', tag: 'tag-green',
+    lab: 'Technion Learning Analytics, Learning Design Lab', role: 'Research Assistant', period: 'Jun 2026 – Present', tag: 'tag-green',
     bullets: [
       'Built an end-to-end Python pipeline to process and analyze 2000+ student–LLM interaction data.',
       'Developed multilingual transcript parsing, validation, pseudonymization, and data-quality tooling across multiple study waves.',
@@ -59,12 +59,6 @@ export default function Research() {
 
         <FadeUp delay={0.05}>
           <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', lineHeight: 1.2, marginBottom: '1rem', letterSpacing: '-0.01em' }}>Research</h2>
-        </FadeUp>
-
-        <FadeUp delay={0.1}>
-          <p style={{ color: '#3A3A38', lineHeight: 1.75, marginBottom: '3rem' }}>
-            Technology rarely works the same way for everyone, and understanding why and what to do about it is the underlying thread that connects my work. I approach problems from multiple angles, combining design, evaluation, and implementation, and drawing on whatever disciplines the question demands. That's taken me across AI, education, and accessibility; some of the porjects I worked on involved studying how tools perform in real classrooms, building systems that work for students they were never designed for, and asking whether AI-powered technologies actually deliver on what they promise. I'm interested in the full arc from research question to working system, and in the spaces where those two things don't yet meet.
-          </p>
         </FadeUp>
 
         {/* Research positions */}
