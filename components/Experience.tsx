@@ -1,7 +1,7 @@
 'use client'
 
 const inspiritBullets = [
-  'Taught foundational AI/ML concepts to 320+ students across 32+ cohorts; mentored student projects spanning object/cancer detection, distracted-driver analysis, and voice interfaces, guiding the full ML pipeline from data preparation through responsible-AI evaluation.',
+  'Taught foundational AI/ML concepts to 500+ students across 50+ cohorts; mentored student projects spanning object/cancer detection, distracted-driver analysis, and voice interfaces, guiding the full ML pipeline from data preparation through responsible-AI evaluation.',
   'Maintained and redesigned portions of the AI/ML curriculum; reviewed and debugged course materials and prepared instructor-facing resources, consistently receiving highly positive feedback.',
   'Progressed from Instructor to Program Manager, Curriculum Manager, and ultimately Weekend Lead; managed cohorts of 250+ students and led scheduling, onboarding, and coordination efforts.',
   "Provided personalized 1:1 instruction, adapting AI/ML concepts to each learner's background and pace.",
